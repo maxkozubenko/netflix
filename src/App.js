@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { FagsContainer } from "./containers/Fags.js";
+import FooterContainer from "./containers/Footer.js";
+import JumbotronContainer from "./containers/Jumbotron.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <JumbotronContainer />
+      <FagsContainer />
+      <FooterContainer />
+    </>
   );
 }
 
